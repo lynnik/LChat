@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#4990e2</color>
+  <color name="colorPrimaryDark">#4281CA</color>
+  <color name="colorAccent">#50c3e3</color>
+
+  <color name="buttonSelectBackground">#f6f6f6</color>
+  <color name="buttonDeselectBackground">#00000000</color>
+  <color name="buttonSelectText">#4a4a4a</color>
+  <color name="buttonDeselectText">#f6f6f6</color>
+  <color name="buttonSelectBadgeBackground">#50c3e3</color>
+  <color name="buttonDeselectBadgeBackground">#f6f6f6</color>
+  <color name="buttonSelectBadgeText">#ffffff</color>
+  <color name="buttonDeselectBadgeText">#c7c7cc</color>
+</resources>

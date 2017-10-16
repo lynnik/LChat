@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.lynnik.lchat.activities.ChatActivity">
+  <item
+    android:id="@+id/new_chat"
+    android:icon="@drawable/ic_new_chat"
+    android:title="New chat"
+    app:showAsAction="always"/>
+</menu>

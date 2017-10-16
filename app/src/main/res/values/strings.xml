@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">LChat</string>
+  <string name="action_settings">Settings</string>
+  <string name="title_activity_chat">ChatActivity</string>
+
+  <string name="chat">Chat</string>
+  <string name="live_chat">Live Chat</string>
+</resources>

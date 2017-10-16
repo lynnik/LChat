@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="70dp"
+  android:layout_marginBottom="1dp"
+  android:clickable="true"
+  android:foreground="?android:attr/selectableItemBackground">
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/backgroundConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4990e2">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="27dp"
+      android:layout_marginLeft="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="28dp"
+      android:fontFamily="sans-serif-medium"
+      android:gravity="center_horizontal"
+      android:letterSpacing="-0.02"
+      android:textColor="#ffffff"
+      android:textSize="14sp"
+      android:textStyle="normal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Remove"/>
+
+  </android.support.constraint.ConstraintLayout>
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/foregroundConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+      android:id="@+id/photoImageView"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginBottom="12dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:adjustViewBounds="true"
+      android:cropToPadding="true"
+      android:scaleType="centerCrop"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+      android:id="@+id/fullNameTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="5dp"
+      android:layout_marginLeft="11dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginStart="11dp"
+      android:layout_marginTop="15dp"
+      android:ellipsize="end"
+      android:fontFamily="sans-serif-medium"
+      android:letterSpacing="-0.02"
+      android:lines="1"
+      android:textColor="#4a4a4a"
+      android:textSize="16sp"
+      android:textStyle="normal"
+      app:layout_constraintLeft_toRightOf="@+id/photoImageView"
+      app:layout_constraintRight_toLeftOf="@+id/dateTextView"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Denise Barnes"/>
+
+    <TextView
+      android:id="@+id/lastMessageTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="5dp"
+      android:layout_marginLeft="11dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginStart="11dp"
+      android:ellipsize="end"
+      android:fontFamily="sans-serif"
+      android:letterSpacing="-0.02"
+      android:lines="1"
+      android:textColor="#797979"
+      android:textSize="14sp"
+      android:textStyle="normal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@+id/photoImageView"
+      app:layout_constraintRight_toLeftOf="@+id/unreadMessagesTextView"
+      tools:text="Tousled food truck polaroid, sa…"/>
+
+    <TextView
+      android:id="@+id/dateTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="36dp"
+      android:layout_marginRight="36dp"
+      android:layout_marginTop="6dp"
+      android:ellipsize="end"
+      android:fontFamily="sans-serif"
+      android:gravity="end"
+      android:letterSpacing="-0.02"
+      android:lines="1"
+      android:textColor="#c7c7cc"
+      android:textSize="12sp"
+      android:textStyle="normal"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="16:04"/>
+
+    <TextView
+      android:id="@+id/unreadMessagesTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="22dp"
+      android:layout_marginBottom="17dp"
+      android:layout_marginEnd="36dp"
+      android:layout_marginRight="36dp"
+      android:layout_marginTop="31dp"
+      android:background="@drawable/circle"
+      android:fontFamily="sans-serif-medium"
+      android:gravity="center"
+      android:letterSpacing="-0.02"
+      android:minWidth="22dp"
+      android:paddingEnd="7.5dp"
+      android:paddingLeft="7.5dp"
+      android:paddingRight="7.5dp"
+      android:paddingStart="7.5dp"
+      android:textColor="#ffffff"
+      android:textSize="12sp"
+      android:textStyle="normal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="1"/>
+
+    <ImageView
+      android:id="@+id/arrowImageView"
+      android:layout_width="9dp"
+      android:layout_height="9dp"
+      android:layout_marginBottom="32dp"
+      android:layout_marginEnd="19dp"
+      android:layout_marginRight="19dp"
+      android:layout_marginTop="29dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_arrow"/>
+
+    <FrameLayout
+      android:id="@+id/bottomLineFrameLayout"
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginStart="16dp"
+      android:background="#e9e9e9"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"/>
+
+  </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

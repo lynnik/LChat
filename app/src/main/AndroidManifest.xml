@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.lynnik.lchat">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+
+    <activity
+      android:name=".activities.MainActivity"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".activities.ChatActivity"
+      android:parentActivityName=".activities.MainActivity"
+      android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.lynnik.lchat.activities.MainActivity"/>
+    </activity>
+
+    <activity
+      android:name=".activities.NewMessageActivity"
+      android:label="New message"
+      android:parentActivityName=".activities.ChatActivity"
+      android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.lynnik.lchat.activities.ChatActivity"/>
+    </activity>
+
+    <activity
+      android:name=".activities.ConversationActivity"
+      android:label="Conversation"
+      android:parentActivityName=".activities.ChatActivity"
+      android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.lynnik.lchat.activities.ChatActivity"/>
+    </activity>
+
+  </application>
+
+</manifest>
